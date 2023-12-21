@@ -1,1 +1,5 @@
+# Start MC server on-start
+@reboot sleep 5 && sudo bash /home/mcuser/magma2/scripts/startup.sh
 
+# Run stop and backup at 7am everyday
+0 7 * * * sudo bash /home/mcuser/magma2/scripts/stop_and_backup.sh
